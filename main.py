@@ -17,3 +17,13 @@
 # GC% — доля гуанина и цитозина в цепи (важно для устойчивости).
 # Трансляция — считывание РНК триплетами (кодонами) в аминокислоты по таблице кодонов.
 # ORF (Open Reading Frame) — участок РНК от старт-кодона (AUG) до стоп-кодона (UAA, UAG, UGA).
+from OOP_MVC_DNK_RNK_view import ConsoleView
+from OOP_MVC_DNK_RNK_controller import Controller
+
+def main():
+    view = ConsoleView()
+    controller = Controller(view)
+    controller.run()
+
+if __name__ == "__main__":
+    main()
