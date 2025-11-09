@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5db2fb56-197a-4c8e-9a58-177f901ab6e9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/OOP_MVC_DNK_RNK_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_MVC_DNK_RNK_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_MVC_DNK_RNK_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_MVC_DNK_RNK_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +89,7 @@
       <workItem from="1762327338680" duration="936000" />
       <workItem from="1762328296804" duration="3149000" />
       <workItem from="1762331537618" duration="30000" />
-      <workItem from="1762709080158" duration="950000" />
+      <workItem from="1762709080158" duration="1130000" />
     </task>
     <servers />
   </component>

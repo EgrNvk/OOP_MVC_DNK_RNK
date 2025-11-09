@@ -8,6 +8,8 @@ class ConsoleView:
         print("5. Комплементарна послідовність")
         print("6. Обчислити GC%")
         print("7. Мутація")
+        print("8. Зберегти у файл (FASTA)")
+        print("9. Завантажити з файлу (FASTA)")
         print("0. Вихід")
 
     def prompt(self, msg):
