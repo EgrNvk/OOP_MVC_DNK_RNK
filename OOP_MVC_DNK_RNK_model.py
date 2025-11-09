@@ -25,3 +25,15 @@ class SequenceModel:
         lst=list(self.seq)
         lst[pos-1]=new_base.upper()
         return SequenceModel("".join(lst))
+
+    def save_fasta(self, path):
+        with open(path, "w") as f:
+            f.write(">sequence\n")
+            f.write(self.seq+"\n")
+
+    @staticmethod
+    def load_fasta(path):
+        with open(path, "r") as f:
+            lines = f.readlines()
+        seq="".join(line.strip() for line in lines if not line.startswith(">"))
+        return SequenceModel(seq)
