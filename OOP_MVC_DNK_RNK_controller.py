@@ -81,11 +81,29 @@ class Controller:
                 self.cmd_gc_len()
             elif choice == "7":
                 self.cmd_mutate()
+            elif choice == "8":
+                self.cmd_save()
+            elif choice == "9":
+                self.cmd_load()
             elif choice == "0":
                 self.view.show("Завершення роботи.")
                 break
             else:
                 self.view.show("Невірний вибір.")
+
+    def cmd_save(self):
+        if self.model is None:
+            self.view.show("Спочатку введіть послідовність")
+            return
+        filename="sequence.fasta"
+        self.model.save_fasta(filename)
+        self.view.show(f"Послідовність збережена у файл {filename}")
+
+    def cmd_load(self):
+        filename="sequence.fasta"
+        self.model=SequenceModel.load_fasta(filename)
+        self.view.show("Послідовність завантажена з файлу sequence.fasta.")
+        self.view.show_sequence(self.model)
 
 if __name__ == "__main__":
     view = ConsoleView()
